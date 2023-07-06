@@ -29,9 +29,10 @@
         countButton.addEventListener('click', function(){
             let text = textArea.value;
             let wordsCount = countWords(text);
+            let wordsCount = countWords(text);
             result.innerHTML = '<b>Длина текста:</b> ' +
                 text.length + ' символов<br>' +
-                '<b>Количество слов:</b> ' + wordsCount;
+                '<b>Без пробелов:</b> ' + withoutSpaces + '<br>';
         });
 
         textArea.addEventListener('keyup', function(){
